@@ -12,7 +12,7 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.0.0/modern-normalize.min.css" />
-	
+
 		<link rel="stylesheet" href="./css/main.min.css" />
 	</head>
 
@@ -86,7 +86,23 @@
 						<li class="portfolio-list__items">
 							<a class="portfolio-list__link link" href="">
 								<div class="portfolio-list__thumb">
-									<img src="./images/projects/prod1.jpg" alt="Веб-сайт Технокряк открыт на мониторе" />
+									<picture>
+										<source
+											srcset="./images/projects/prod1-desktop.jpg 1x, ./images/projects/prod1-desktop@2x.jpg 2x"
+											media="(min-width: 1200px)"
+										/>
+										<source
+											srcset="./images/projects/prod1-tablet.jpg 1x, ./images/projects/prod1-tablet@2x.jpg 2x"
+											media="(min-width: 768px)"
+										/>
+										<source
+											srcset="./images/projects/prod1-mobile.jpg 1x, ./images/projects/prod1-mobile@2x.jpg 2x"
+											media="(max-width: 767px)"
+										/>
+										<img src="./images/projects/prod1.jpg" alt="Веб-сайт Технокряк открыт на мониторе" />
+										/></picture
+									>
+
 									<p class="overlay">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -100,7 +116,22 @@
 						<li class="portfolio-list__items">
 							<a class="portfolio-list__link link" href="">
 								<div class="portfolio-list__thumb">
-									<img src="./images/projects/prod2.jpg" alt="Постер баскетбольной команды" />
+									<picture>
+										<source
+											srcset="./images/projects/prod2-desktop.jpg 1x, ./images/projects/prod2-desktop@2x.jpg 2x"
+											media="(min-width: 1200px)"
+										/>
+										<source
+											srcset="./images/projects/prod1-tablet.jpg 1x, ./images/projects/prod2-tablet@2x.jpg 2x"
+											media="(min-width: 768px)"
+										/>
+										<source
+											srcset="./images/projects/prod2-mobile.jpg 1x, ./images/projects/prod2-mobile@2x.jpg 2x"
+											media="(max-width: 767px)"
+										/>
+										<img src="./images/projects/prod2.jpg" alt="Постер баскетбольной команды" />
+									</picture>
+
 									<p class="overlay">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
