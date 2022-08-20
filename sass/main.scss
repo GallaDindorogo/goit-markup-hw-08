@@ -1,0 +1,27 @@
+@import "./utils/variables";
+@import "./utils/mixin";
+@import "./utils/placeholder";
+
+@import "./base/common";
+@import "./base/container";
+@import "./base/section";
+
+@import "./components/sectiontitle";
+@import "./components/logo";
+@import "./components/header";
+@import "./components/footer";
+@import "./components/social-list";
+@import "./components/subscribe";
+@import "./components/overlay";
+@import "./components/visually-hidden";
+@import "./components/is-hidden";
+@import "./components/backdrop";
+@import "./components/modal-window";
+@import "./components/modal_form";
+
+@import "./layot/hero";
+@import "./layot/features";
+@import "./layot/about";
+@import "./layot/team";
+@import "./layot/clients";
+@import "./layot/portfolio";

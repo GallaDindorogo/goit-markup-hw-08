@@ -1,0 +1,32 @@
+.modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 528px;
+	background-color: var(--primery-backgraund-color);
+	padding: 40px;
+}
+.close-modal-btn {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	@extend %flex;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: transparent;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0;
+	transition: border-color var(--tra);
+
+	&:hover,
+	&:focus {
+		border-color: var(--accent-color);
+	}
+}
+
+.close-modal-btn:hover .modal-close-btn-icon,
+.close-modal-btn:focus .modal-close-btn-icon {
+	fill: var(--accent-color);
+}

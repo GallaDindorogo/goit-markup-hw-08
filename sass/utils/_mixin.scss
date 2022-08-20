@@ -1,0 +1,21 @@
+@mixin btn(
+	$pt,
+	$pb,
+	$pr,
+	$pl,
+	$bgc: var(--accent-color),
+	$br: 4px,
+	$c: var(--third-text-color),
+	$bsh: 0px 4px 4px rgba(0, 0, 0, 0.15),
+	$tr: background-color var(--transithion-duration-function)
+) {
+	padding-top: $pt;
+	padding-bottom: $pb;
+	padding-right: $pr;
+	padding-left: $pl;
+	background: $bgc;
+	border-radius: $br;
+	color: $c;
+	box-shadow: $bsh;
+	transition: $tr;
+}

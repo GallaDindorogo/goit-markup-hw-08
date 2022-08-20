@@ -1,0 +1,38 @@
+.footer {
+	padding-top: 60px;
+	padding-bottom: 59px;
+	background-color: var(--secondary-backgraund-color);
+
+	& .logo {
+		display: block;
+		margin-right: 0px;
+		margin-bottom: 20px;
+	}
+	&__address-social {
+		display: flex;
+		align-items: baseline;
+		justify-content: space-between;
+	}
+	&__adress-linkmap {
+		font-style: normal;
+		line-height: 1.71;
+		color: var(--third-text-color);
+	}
+}
+
+.adress__link {
+	font-style: normal;
+	line-height: 1.71;
+	color: rgba(255, 255, 255, 0.6);
+	transition: color var(--transithion-duration-function);
+
+	&:not(:last-child) {
+		display: block;
+		margin-bottom: 9px;
+	}
+
+	&:hover,
+	&.adress__link:focus {
+		color: var(--accent-color);
+	}
+}
