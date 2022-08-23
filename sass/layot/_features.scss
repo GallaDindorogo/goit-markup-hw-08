@@ -1,37 +1,93 @@
-.features {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 30px;
+@media screen and (max-width: 767px) {
+	.features {
+		&__item {
+			margin-bottom: 30px;
+		}
 
-	&__item {
-		flex-basis: calc((100% - 90px) / 4);
-	}
+		&__link {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-wrap: wrap;
+			height: 120px;
+			background: var(--third-backgraund-color);
+			border-radius: 4px;
+			margin-bottom: 30px;
+		}
 
-	&__link {
-		@extend %flex;
-		flex-wrap: wrap;
-		height: 120px;
-		background: var(--third-backgraund-color);
-		border-radius: 4px;
-		margin-bottom: 30px;
-	}
+		&.title {
+			margin-bottom: 10px;
+			font-size: 14px;
+			line-height: 1.14;
+			text-align: center;
+			text-transform: uppercase;
+		}
+		&.text {
+			line-height: 1.71;
+			font-style: normal;
+			color: var(--secondary-text-color);
+		}
 
-	&.title {
-		margin-bottom: 10px;
-		font-size: 14px;
-		line-height: 1.14;
-		text-transform: uppercase;
+		&.link-icon {
+			display: flex;
+			flex-wrap: wrap;
+			width: 70px;
+			height: 70px;
+		}
 	}
-	&.text {
-		line-height: 1.71;
-		font-style: normal;
-		color: var(--secondary-text-color);
-	}
+}
 
-	&.link-icon {
+@media screen and (min-width: 768px) {
+	.features {
 		display: flex;
 		flex-wrap: wrap;
-		width: 70px;
-		height: 70px;
+		gap: 30px;
+
+		&__item {
+			flex-basis: calc((100% - 30px) / 2);
+		}
+
+		&__link {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-wrap: wrap;
+			height: 120px;
+			background: var(--third-backgraund-color);
+			border-radius: 4px;
+			margin-bottom: 30px;
+		}
+
+		&.title {
+			margin-bottom: 10px;
+			font-size: 14px;
+			line-height: 1.14;
+			justify-content: center;
+			text-transform: uppercase;
+		}
+		&.text {
+			line-height: 1.71;
+			font-style: normal;
+			color: var(--secondary-text-color);
+		}
+
+		&.link-icon {
+			display: flex;
+			flex-wrap: wrap;
+			width: 70px;
+			height: 70px;
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.features {
+		display: flex;
+		flex-wrap: nowrap;
+		gap: 30px;
+
+		&__item {
+			flex-basis: calc((100% - 90px) / 4);
+		}
 	}
 }
