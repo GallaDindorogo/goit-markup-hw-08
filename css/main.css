@@ -211,6 +211,9 @@ body {
   .page-header .container {
     justify-content: space-evenly;
   }
+  .menu__link .contact:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 @media screen and (max-width: 767px) {
   .mobile-menu {
@@ -220,7 +223,7 @@ body {
     top: 0;
     left: 0;
     z-index: 1000;
-    background-color: red;
+    background-color: blanchedalmond;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
