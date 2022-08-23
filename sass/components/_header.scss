@@ -10,20 +10,25 @@
 	}
 }
 
+.page-header {
+	position: relative;
+	padding-top: 16px;
+	padding-bottom: 16px;
+
+	& .container {
+		display: flex;
+		justify-content: space-between;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
 @media screen and (min-width: 768px) {
-	.mobile-menu-open {
+	.mobile-menu {
 		display: none;
 	}
-
-	.page-header {
-		position: relative;
-		padding-top: 16px;
-		padding-bottom: 16px;
-
-		& .container {
-			display: flex;
-			justify-content: space-between;
-		}
+	.mobile-menu-open {
+		display: none;
 	}
 
 	.page-nav {
@@ -98,10 +103,6 @@
 	.page-header {
 		padding-top: 24px;
 		padding-bottom: 25px;
-
-		& .container {
-			justify-content: space-evenly;
-		}
 	}
 	.menu__link .contact:not(:last-child) {
 		margin-right: 30px;
