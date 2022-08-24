@@ -7,17 +7,12 @@
 	color: #ffffff;
 }
 
-.subscribe__form-fields {
-	display: flex;
-	border: none;
-	padding: 0;
-}
 .subscribe__input-field {
 	margin-right: 12px;
 }
 
 .subscribe__form-input {
-	width: 358px;
+	width: 100%;
 	height: 50px;
 	padding: 16px 15px;
 	font-size: 16px;
@@ -61,4 +56,83 @@
 
 .link-svg {
 	fill: var(--third-text-color);
+}
+
+@media screen and (max-width: 767px) {
+	.subscribe__form-fields {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+
+		border: none;
+		padding: 0;
+	}
+
+	.subscribe .btn {
+		font-size: 16px;
+		line-height: 1.88;
+		letter-spacing: 0.06em;
+		@include btn($pt: 10px, $pb: 10px, $pr: 31px, $pl: 13px);
+		margin-left: 125px;
+		margin-right: 125px;
+
+		&:active {
+			background-color: #188ce8;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.subscribe__form {
+		margin-left: 166px;
+		margin-right: 152px;
+	}
+	.subscribe__form-fields {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+
+		border: none;
+		padding: 0;
+	}
+	.subscribe .btn {
+		font-size: 16px;
+		line-height: 1.88;
+		letter-spacing: 0.06em;
+		@include btn($pt: 10px, $pb: 10px, $pr: 31px, $pl: 13px);
+		margin-left: 110px;
+		margin-right: 110px;
+
+		&:active {
+			background-color: #188ce8;
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.subscribe__form-input {
+		width: 358px;
+	}
+	.subscribe__form {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.subscribe__form-fields {
+		display: flex;
+		flex-direction: row;
+		border: none;
+		padding: 0;
+	}
+	.subscribe .btn {
+		font-size: 16px;
+		line-height: 1.88;
+		letter-spacing: 0.06em;
+		@include btn($pt: 10px, $pb: 10px, $pr: 31px, $pl: 13px);
+		margin-left: 1px;
+		margin-right: 1px;
+
+		&:active {
+			background-color: #188ce8;
+		}
+	}
 }
