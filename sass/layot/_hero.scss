@@ -13,7 +13,7 @@
 	&__title {
 		margin-left: auto;
 		margin-right: auto;
-		width: 360px;
+		// width: 360px;
 		font-weight: 900;
 		font-size: 26px;
 		line-height: 1.615;
@@ -38,6 +38,9 @@
 	}
 
 	@media screen and (max-width: 767px) {
+		.hero_title {
+			width: auto;
+		}
 		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 			url("../../images/hero/hero-mobile.jpg");
 
@@ -50,6 +53,9 @@
 	}
 
 	@media screen and (min-width: 768px) {
+		.hero__title {
+			width: 360px;
+		}
 		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 			url("../../images/hero/hero-tablet.jpg");
 

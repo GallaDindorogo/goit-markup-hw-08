@@ -73,8 +73,9 @@
 		line-height: 1.88;
 		letter-spacing: 0.06em;
 		@include btn($pt: 10px, $pb: 10px, $pr: 31px, $pl: 13px);
-		margin-left: 125px;
-		margin-right: 125px;
+		margin-left: auto;
+		margin-right: auto;
+		width: max-content;
 
 		&:active {
 			background-color: #188ce8;

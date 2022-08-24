@@ -1,17 +1,10 @@
-.modal {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 528px;
-	background-color: var(--primery-backgraund-color);
-	padding: 40px;
-}
 .close-modal-btn {
 	position: absolute;
 	top: 8px;
 	right: 8px;
-	@extend %flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;
@@ -29,4 +22,33 @@
 .close-modal-btn:hover .modal-close-btn-icon,
 .close-modal-btn:focus .modal-close-btn-icon {
 	fill: var(--accent-color);
+}
+
+@media screen and (max-width: 479px) {
+	.modal {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		background-color: var(--primery-backgraund-color);
+		padding: 40px;
+	}
+}
+
+@media screen and (min-width: 480px) {
+	.modal {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 450px;
+		background-color: var(--primery-backgraund-color);
+		padding: 40px;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.modal {
+		width: 528px;
+	}
 }
