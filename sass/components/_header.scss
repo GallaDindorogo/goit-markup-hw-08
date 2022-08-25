@@ -104,7 +104,10 @@
 		padding-top: 24px;
 		padding-bottom: 25px;
 	}
-	.menu__link .contact:not(:last-child) {
-		margin-right: 30px;
+	.menu__link {
+		&.contact {
+			font-size: 14px;
+			margin-right: 30px;
+		}
 	}
 }

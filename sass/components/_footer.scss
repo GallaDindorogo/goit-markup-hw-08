@@ -46,15 +46,15 @@
 	.footer {
 		padding-top: 60px;
 		padding-bottom: 60px;
+
 		&__address-social {
 			display: flex;
 			flex-direction: column;
 			gap: 60px;
 		}
-
-		&_adress-list {
-			margin-bottom: 60px;
-		}
+	}
+	.social {
+		margin-top: 60px;
 	}
 }
 
