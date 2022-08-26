@@ -326,6 +326,24 @@ body {
   margin-left: 10px;
 }
 
+@media screen and (max-width: 320px) {
+  .mobile-menu-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 302px;
+  }
+  .mobile-menu-nav__link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.175;
+    letter-spacing: 0.02em;
+    color: var(--primery-text-color);
+  }
+  .mobile-menu-nav__item .current {
+    color: var(--accent-color);
+  }
+}
 .footer {
   background-color: var(--secondary-backgraund-color);
 }
@@ -1283,7 +1301,7 @@ body {
     flex-wrap: wrap;
     justify-content: start;
     row-gap: 15px;
-    margin-right: 5px;
+    margin-right: 15px;
   }
   .portfolio-list {
     display: block;
