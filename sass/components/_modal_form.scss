@@ -1,9 +1,15 @@
 .modal-title {
 	margin-bottom: 12px;
 	font-size: 20px;
-	line-height: 1.15;
+	line-height: 1.5;
 	letter-spacing: 0.03em;
 	text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+	.modal-title {
+		line-height: 1.5;
+	}
 }
 
 .modal-form {
