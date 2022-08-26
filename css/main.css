@@ -343,6 +343,22 @@ body {
   .mobile-menu-nav__item .current {
     color: var(--accent-color);
   }
+  .mobile-menu-adress {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 64px;
+  }
+  .mobile-menu-adress__link {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+  }
+  .mobile-menu-adress__link.tel {
+    color: var(--accent-color);
+  }
 }
 .footer {
   background-color: var(--secondary-backgraund-color);
